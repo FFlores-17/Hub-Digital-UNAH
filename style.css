@@ -5,9 +5,16 @@
 body{
     background-color: var(--primary-color);
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
-.display-1{
-    color: white;
-    font-weight: 700;
+
+
+.img-header{
+    border-radius: 35%;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    object-position: center;
 }
+
+
