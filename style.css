@@ -7,10 +7,12 @@
     --senary-color: white;
     --septenary-color: black;
 }
-body{
-    background-color: var(--primary-color);
+*{
     font-family: "Montserrat", sans-serif;
     color: white;
+}
+body{
+    background-color: var(--primary-color);  
 }
 .btn-bd-primary{
     --bs-btn-bg:var(--secondary-color);
@@ -24,10 +26,23 @@ body{
 
 .img-header{
     width: 50vmax;
-    border-radius: 35%;
+    border-radius: 25%;
     aspect-ratio: 1/1.2;
     object-fit: cover;
-    object-position: center;
 }
+
+.bg-about-hub{
+    background-color: var(--senary-color);
+}
+
+.img-about-hub{
+    width: 50vmax;
+    border-radius: 25%;
+}
+
+.content-about-hub *{
+    color: var(--primary-color);
+}
+
 
 
