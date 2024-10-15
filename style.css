@@ -21,9 +21,7 @@ body{
     --bs-btn-hover-bg: var(--tertiary-color);
     --bs-btn-hover-border-color: var(--secondary-color);
 }
-.logo{
-    width: 50vmin;
-}
+
 .img-header{
     width: 50vmax;
     border-radius: 35%;
