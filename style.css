@@ -1,16 +1,31 @@
 :root {
     --primary-color: #205382;
     --secondary-color: #ffc107;
+    --tertiary-color: #e8a713;
+    --quaternary-color: #2874e7;
+    --quinary-color: #6c757d;
+    --senary-color: white;
+    --septenary-color: black;
 }
 body{
     background-color: var(--primary-color);
     font-family: "Montserrat", sans-serif;
     color: white;
 }
-
-
-
+.btn-bd-primary{
+    --bs-btn-bg:var(--secondary-color);
+    --bs-btn-color:var(--primary-color);
+    --bs-btn-font-weight: 600;
+    --bs-btn-border-color: var(--secondary-color);
+    --bs-btn-hover-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--tertiary-color);
+    --bs-btn-hover-border-color: var(--secondary-color);
+}
+.logo{
+    width: 50vmin;
+}
 .img-header{
+    width: 50vmax;
     border-radius: 35%;
     aspect-ratio: 1/1.2;
     object-fit: cover;
