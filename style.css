@@ -44,5 +44,13 @@ body{
     color: var(--primary-color);
 }
 
+.cards-cat *{
+    color: var(--primary-color);
+}
+
+.card-cat{
+    width: 25vmax;
+}
+
 
 
