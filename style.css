@@ -1,3 +1,4 @@
+/*PALETA DE COLORES Y LETRA*/
 :root {
     --primary-color: #205382;
     --secondary-color: #ffc107;
@@ -14,6 +15,7 @@
 body{
     background-color: var(--primary-color);  
 }
+/* FORMATO DE BOTON PRINCIPAL*/
 .btn-bd-primary{
     --bs-btn-bg:var(--secondary-color);
     --bs-btn-color:var(--primary-color);
@@ -24,6 +26,7 @@ body{
     --bs-btn-hover-border-color: var(--secondary-color);
 }
 
+/* IMAGEN DEL HEADER*/
 .img-header{
     width: 50vmax;
     border-radius: 25%;
@@ -31,6 +34,7 @@ body{
     object-fit: cover;
 }
 
+/* ESTILOS DE LA SECCION SOBRE LOS HUB*/
 .bg-about-hub{
     background-color: var(--senary-color);
 }
@@ -44,15 +48,24 @@ body{
     color: var(--primary-color);
 }
 
+/*ESTILOS DE NUESTRAS CATEGORÍAS DE APRENDIZAJE*/
 .cards-cat *{
     color: var(--primary-color);
 }
 
 .card-cat{
     width: 70%;
-    height: 100%;
     text-align: center;
     border-radius: 10%;
+}
+
+.card-cat p{
+    --max-lines:3;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    line-clamp: var(--max-lines);
 }
 
 .card-cat h5{
@@ -62,6 +75,7 @@ body{
 .card-cat img{
     border-radius:10% ;
 }
+
 
 
 
