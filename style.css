@@ -21,7 +21,7 @@ body{
     --bs-btn-color:var(--primary-color);
     --bs-btn-font-weight: 600;
     --bs-btn-border-color: var(--secondary-color);
-    --bs-btn-hover-color: var(--primary-color);
+    --bs-btn-hover-color: var(--senary-color);
     --bs-btn-hover-bg: var(--tertiary-color);
     --bs-btn-hover-border-color: var(--secondary-color);
 }
@@ -35,8 +35,9 @@ body{
 }
 
 /* ESTILOS DE LA SECCION SOBRE LOS HUB*/
-.bg-about-hub{
+.bg-senary{
     background-color: var(--senary-color);
+    color: var(--primary-color);
 }
 
 .img-about-hub{
@@ -57,6 +58,7 @@ body{
     width: 70%;
     text-align: center;
     border-radius: 10%;
+    
 }
 
 .card-cat p{
@@ -76,6 +78,10 @@ body{
     border-radius:10% ;
 }
 
+.events-training *{
+    color: var(--primary-color);
+}
 
+/*SECCION DE CAPACITACIONES*/
 
 
