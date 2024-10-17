@@ -78,10 +78,14 @@ body{
     border-radius:10% ;
 }
 
+/*SECCION DE CAPACITACIONES*/
 .events-training *{
     color: var(--primary-color);
 }
 
-/*SECCION DE CAPACITACIONES*/
 
+.events-training .card{
+    border: 3px var(--secondary-color) solid;
+    width: 80%;
+}
 
