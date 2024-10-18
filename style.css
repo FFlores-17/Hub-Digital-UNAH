@@ -85,9 +85,38 @@ body{
 
 
 .events-training .card{
-    border: 3px var(--secondary-color) solid;
+    border: 3px var(--quinary-color) solid;
     height: 100%;
 }
 
-
+.events-training .card {
+    position: relative;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  
+    &:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      top: -4px;
+      border: 3px solid var(--secondary-color);
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
 
