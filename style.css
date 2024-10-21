@@ -8,12 +8,11 @@
     --senary-color: white;
     --septenary-color: black;
 }
-*{
-    font-family: "Montserrat", sans-serif;
-    color: white;
-}
+
 body{
-    background-color: var(--primary-color);  
+    background-color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    color: white !important;  
 }
 /* FORMATO DE BOTON PRINCIPAL*/
 .btn-bd-primary{
@@ -26,9 +25,12 @@ body{
     --bs-btn-hover-border-color: var(--secondary-color);
 }
 
+/* FORMATO GENERAL PARA TITULOS DE CARTAS */
 .card-title{
     font-size: 20px;
 }
+
+/* SECCION DEL HEADER */
 
 /* IMAGEN DEL HEADER*/
 .img-header{
@@ -47,6 +49,7 @@ body{
     background-color: var(--tertiary-color);
     color: var(--senary-color);
 }
+
 /* ESTILOS DE LA SECCION SOBRE LOS HUB*/
 .bg-senary{
     background-color: var(--senary-color);
@@ -70,7 +73,7 @@ body{
 .card-cat{
     width: 70%;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .card-cat p{
@@ -87,10 +90,55 @@ body{
 }
 
 .card-cat img{
-    border-radius:25px ;
+    border-radius:10px ;
 }
 
 /*SECCION DE CAPACITACIONES*/
+
+.nav-pills .nav-link{
+    padding: 15px !important;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: var(--senary-color);
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link:hover{
+    background: var(--secondary-color);
+    color: var(--senary-color);
+}
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background: var(--primary-color);
+}
+
+.nav-pills .nav-link:after{
+    position: absolute;
+    top: 50%;
+    bottom: 10px;
+    right: -11px;
+    width: 0;
+    height: 0;
+    margin-top: -10px;
+    content: "";
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary-color);
+    opacity: 0;
+}
+
+.nav-pills .nav-link.active:after{
+    opacity: 1;
+}
+
 .events-training *{
     color: var(--primary-color);
 }
@@ -110,7 +158,7 @@ body{
   
    &:hover {
       transition: all 0.2s ease-out;
-      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),0 1px 3px 1px rgba(60, 64, 67, 0.15);
       top: -4px;
       border: 3px solid var(--secondary-color);
     }
