@@ -200,15 +200,57 @@ body{
     border: transparent;
   }
 
-  @media screen and (max-width: 768px) {
+ 
+
+  /* SECCION SOBRE QUE APRENDERAS */
+.img-about-learn{
+    width: 50vmax;
+    border-radius: 10px;
+}
+
+
+.highlight-text{
+    border-radius: 10px;
+    border: 1px var(--senary-color) solid;   
+    color: var(--senary-color);
+}
+
+.box-about-learn-1{
+    border-color: var(--senary-color);
+    color: var(--senary-color);
+    border-top-width: 0px;
+    border-left-width: 0px ;
+    border-radius: 0px;
+}
+
+.box-about-learn-2{
+    border-color: var(--senary-color);
+    color: var(--senary-color);
+    border-top-width: 0px;
+    border-radius: 0px;
+}
+
+
+.box-about-learn-3{
+    border-color: var(--senary-color);
+    color: var(--senary-color);
+    border-top-width: 0px;
+    border-right-width: 0px ; 
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 768px) {
     .button-up{
         width: 48px;
         height: 48px;
         right: 30px;
         bottom: 60px;
-        /* width: 32px;
-        height: 32px; */
         font-size: 16px;
     }
-  }
 
+    .box-about-learn-1, .box-about-learn-2, .box-about-learn-3{
+        border: 1px var(--senary-color) solid;
+        border-radius: 10px;
+    }
+    
+  }
