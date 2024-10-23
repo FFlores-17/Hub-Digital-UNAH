@@ -186,7 +186,7 @@ body{
     background-color: var(--quaternary-color);
     border-radius: 50% ;
     position: fixed;
-    bottom: 70px;
+    bottom: 50px;
     right: 50px;
     font-size: 20px;
     cursor: pointer;
@@ -220,24 +220,24 @@ body{
 }
 
 .box-about-learn-1{
-    border-color: var(--senary-color);
-    color: var(--senary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     border-top-width: 0px;
     border-left-width: 0px ;
     border-radius: 0px;
 }
 
 .box-about-learn-2{
-    border-color: var(--senary-color);
-    color: var(--senary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     border-top-width: 0px;
     border-radius: 0px;
 }
 
 
 .box-about-learn-3{
-    border-color: var(--senary-color);
-    color: var(--senary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     border-top-width: 0px;
     border-right-width: 0px ; 
     border-radius: 0px;
@@ -257,10 +257,10 @@ body{
 
 @media screen and (max-width: 768px) {
     .button-up{
-        width: 48px;
-        height: 48px;
-        right: 30px;
-        bottom: 60px;
+        width: 44px;
+        height: 44px;
+        right: 20px;
+        bottom: 40px;
         font-size: 16px;
     }
 
