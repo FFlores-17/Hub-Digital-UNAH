@@ -160,29 +160,27 @@ body{
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-  
-   &:hover {
-      transition: all 0.2s ease-out;
-      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),0 1px 3px 1px rgba(60, 64, 67, 0.15);
-      top: -4px;
-      border: 3px solid var(--secondary-color);
+}
+.events-training .card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border: 3px solid var(--secondary-color);
     }
   
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -16px;
-      right: -16px;
-      transform: scale(2);
-      transform-origin: 50% 50%;
-      transition: transform 0.15s ease-out;
-    }
+.events-training .card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+}
   
-    &:hover:before {
-      transform: scale(2.15);
-    }
-  }
+.events-training .card:hover:before {
+    transform: scale(2.15);
+}
   /* -------------------------------------------------------------- */
 
   /* BOTON PARA IR ARRIBA */
@@ -245,6 +243,32 @@ body{
     border-right-width: 0px ; 
     border-radius: 0px;
 }
+
+.ufi {  /* Pseudo-elementos para ocultar las esquinas inferiores */
+    position: relative;
+  }
+
+  .ufi::before,
+  .ufi::after {
+    content: "";
+    position: absolute;
+    width: 20px; /* Ajusta según el grosor del borde */
+    height: 20px;
+    background-color: white;
+    border: solid white;
+  }
+
+  /* Esquina inferior izquierda */
+  .ufi::before {
+    bottom: -1px;
+    left: -1px;
+  }
+
+  /* Esquina inferior derecha */
+  .ufi::after {
+    bottom: -1px;
+    right: -1px;
+  }
 /* -------------------------------------------------------------- */
 
 /* FOOTER */
@@ -260,6 +284,23 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    .nav-pills { /* Alinear horizontalmente en pantallas pequeñas */
+        flex-direction: row !important; /* Cambia la dirección de columna a fila */
+      }
+      .nav-pills .nav-link {
+        flex: 1; /* Permite que cada botón ocupe espacio igual */
+        text-align: center; /* Centra el texto en cada botón */
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .nav-pills .nav-link:after {
+        top: auto; /* Restablece el valor de top */
+        bottom: -10px; /* Coloca el pseudo-elemento en la parte inferior */
+        right: 50%; /* Centra el triángulo horizontalmente */
+        transform: translateX(50%); /* Ajusta el centrado */
+        border-width: 10px 10px 0 10px; /* Cambia para que el triángulo apunte hacia arriba */
+        border-color: var(--primary-color) transparent transparent transparent;
+      }
     .button-up{
         width: 44px;
         height: 44px;

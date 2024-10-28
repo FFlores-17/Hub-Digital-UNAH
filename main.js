@@ -2,7 +2,7 @@ document.getElementById("button-up").addEventListener("click", scrollUp);
 
 function scrollUp(){
 
-    var currentScroll = document.documentElement.scrollTop;
+    let currentScroll = document.documentElement.scrollTop;
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
@@ -17,7 +17,7 @@ buttonUp = document.getElementById("button-up");
 
 window.onscroll = function(){
 
-    var scroll = document.documentElement.scrollTop;
+    let scroll = document.documentElement.scrollTop;
 
     if (scroll > 500){
         buttonUp.style.transform = "scale(1)";
