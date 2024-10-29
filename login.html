@@ -21,33 +21,65 @@
 </head>
 
 <body class="d-flex justify-content-center align-items-center minh-100">
+    <!-- PARA EL FONDO ANIMADO -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- FIN DEL FONDO ANIMADO -->
+
+    <!-- FORMULARIO -->
     <div class="container">
         <div class="login p-5">
             <div class="row justify-content-center">
-                <div class=" col col-md-9 col-lg-5">
+                <div class=" col col-md-9 col-lg-5 pb-3">
                     <a href="index.html">
                         <img src="assets/Logo_Oficial_Azul Marina.png" alt="HUB" class="img-fluid">
                     </a>
-                    
+
                 </div>
             </div>
             <div class="row">
-                <h1 class="fw-bold">Iniciar Sesion</h1>
-                <p>El acceso es libre para los estudiantes y empleados de la UNAH. Para iniciar sesión utiliza tu correo institucional.</p>
+                <p class="mb-3 text-center">El acceso es libre para los estudiantes y empleados de la
+                    UNAH. Para iniciar sesión utiliza tu <b> correo institucional.</b></p>
             </div>
+
             <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Institucional</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- CORREO -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="mail" placeholder="Correo Institucional"
+                            autocomplete="off" required>
+                        <label for="mail">Correo Institucional</label>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                <!-- CONTRASEÑA -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="Password" placeholder="Contraseña"
+                            autocomplete="off" required>
+                            <label for="Password">Contraseña</label>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-bd-primary">Iniciar Sesion</button>
             </form>
+
         </div>
+
     </div>
 </body>
+
 
 </html>
