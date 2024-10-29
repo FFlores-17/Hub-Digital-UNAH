@@ -283,6 +283,15 @@ body{
     background-size: cover;
 }
 
+
+@media  screen and (max-width: 576px) and (min-width: 425px) {
+    .img-logo{ /* Mantener un tamaño constante en pantallas pequeñas */
+        max-width: 80%;
+        min-width: 60%;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .nav-pills { /* Alinear horizontalmente en pantallas pequeñas */
         flex-direction: row !important; /* Cambia la dirección de columna a fila */
@@ -301,18 +310,42 @@ body{
         border-width: 10px 10px 0 10px; /* Cambia para que el triángulo apunte hacia arriba */
         border-color: var(--primary-color) transparent transparent transparent;
       }
-    .button-up{
-        width: 44px;
+    .button-up{ /* Hacer el tamaño del boton mas pequeño y espaciarlo adecuadamente en pantallas pequeñas */
+        width: 44px; 
         height: 44px;
         right: 20px;
         bottom: 65px;
         font-size: 16px;
     }
 
-    .box-about-learn-1, .box-about-learn-2, .box-about-learn-3{
+    .box-about-learn-1, .box-about-learn-2, .box-about-learn-3{ /* Cambiar el borde de las cartas de "Sobre que aprenderas" en pantallas pequeñas */
         border: 1px var(--senary-color) solid;
         border-radius: 10px;
     }
     
   }
 /* -------------------------------------------------------------- */
+/* PAGINA DE REGISTRO */
+/* body.minh-100{
+    background-image: url(assets/bg-img-digital.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+.minh-100{
+    min-height: 100vh;
+}
+
+.login{
+    border-radius: 10px;
+    background-color: var(--senary-color);
+}
+.login *{
+    color: var(--primary-color);
+}
+.login .card{
+    border-radius: 0px;
+
+}
+
