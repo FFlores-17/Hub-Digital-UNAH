@@ -285,7 +285,7 @@ body{
 
 
 @media  screen and (max-width: 576px) and (min-width: 425px) {
-    .img-logo{ /* Mantener un tamaño constante en pantallas pequeñas */
+    .img-logo{ /* Mantener un tamaño constante de los logos en pantallas pequeñas */
         max-width: 80%;
         min-width: 60%;
     }
@@ -434,11 +434,40 @@ body{
 }
 
 .circles li:nth-child(10){
-    left: 85%;
+    left: 55%;
     width: 150px;
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
+}
+
+.circles li:nth-child(11){
+    left: 33%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(12){
+    left: 90%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 2s;
+}
+
+.circles li:nth-child(13){
+    left: 85%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(14){
+    left: 95%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+    animation-duration: 35s;
 }
 
 
@@ -460,6 +489,17 @@ body{
 }
 /* -------------------------------------------------------------- */
 
+/* .login{
+    width: 65%;
+} */
+
+.logo-login{
+    transition: all 300ms ease-out;
+}
+
+.logo-login:hover{
+    transform: scale(1.05);
+}
 
 label {
     white-space: nowrap; 
@@ -469,6 +509,7 @@ label {
     border: 1px solid #000000;
     display: inline-block;
 }
+
 
 
 
